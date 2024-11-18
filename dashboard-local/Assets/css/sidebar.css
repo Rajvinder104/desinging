@@ -1,0 +1,103 @@
+.sidebar {
+  width: 290px;
+  background-color: rgb(31 41 55);
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  transition: transform 0.3s ease, width 0.3s ease;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border-radius: 0 32px 32px 0;
+}
+.sidebar-header img {
+  width: 175px;
+}
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  background: rgb(31 41 55);
+  border-radius: 0 32px 0;
+  padding: 25px 0;
+  /* margin-top: 15px; */
+}
+button.toggle-btn i {
+  color: #29e;
+  border-color: #1f3951;
+  font-size: 20px;
+  background-color: #1f3951;
+  border-radius: 5px;
+  padding: 12px 16px;
+  transition: all 0.3s ease-in-out;
+}
+button.toggle-btn.btn {
+  padding: 0;
+  border: none;
+}
+button.toggle-btn.btn:hover {
+  background-color: #29e;
+}
+button.toggle-btn i:hover {
+  background-color: #29e !important;
+  color: #fff;
+}
+.sidebar.active {
+  transform: translateX(-290px);
+  width: 0;
+}
+
+/*  */
+.peer[open] ~ .peer-open\:grid-rows-\[1fr\] {
+  grid-template-rows: 1fr;
+}
+
+.duration-\[300\] {
+  transition-duration: 300;
+}
+
+.transition-\[grid-template-rows\] {
+  transition-property: grid-template-rows;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.grid-rows-\[0fr\] {
+  grid-template-rows: 0fr;
+}
+
+.group[open] .group-open\:rotate-90 {
+  transform: rotate(90deg);
+}
+
+.accordion-item details {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.accordion-item details:hover {
+  background: linear-gradient(to left, #1f2937, #29e) !important;
+}
+.accordion-summary-active {
+  padding: 0 !important;
+}
+.according-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+ul.accordin-ul {
+  margin-top: 8px;
+  margin-left: 20px;
+}
+li.accordin-li a {
+  color: #ffa800;
+  font-size: 14px;
+}

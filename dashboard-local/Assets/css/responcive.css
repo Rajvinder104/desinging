@@ -1,0 +1,29 @@
+@media (max-width: 991px) {
+    .mobile-logo {
+        display: block;
+    }
+    .sidebar.active {
+        transform: translateX(0px);
+        width: 290px;
+        z-index: 999;
+        top: 100px;
+    }
+    .sidebar {
+        transform: translateX(-290px);
+        width: 0;
+        top: 100px;
+        
+        padding-bottom: 120px;
+    }
+    .main-content.expanded {
+        margin-left: 0;
+        width: 100%;
+    }
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .icon-main {
+        display: none;
+    }
+}

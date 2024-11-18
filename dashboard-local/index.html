@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="./Assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/sidebar.css">
+    <link rel="stylesheet" href="./Assets/css/responcive.css">
+    <link rel="stylesheet" href="./Assets/css/tailwind.min.css">
+    <link rel="icon" href="./Assets/img/favicon.png" type="image/x-icon">
+
+
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="modal fade justify-content-center" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Welcome</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    fdprocessedid="mhmwvk"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./Assets/img/logo.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header fixed-top">
+            <img src="./Assets/img/logo.png" alt="">
+        </div>
+        <div class="sidebar-link">
+            <div class="accordion-item overflow-hidden">
+                <details class="group peer accordion-item-active" data-accordion="a1">
+                    <summary class="according-main accordion-summary-active">
+                      <a href="#">  <h3 class="according-title"><i class="fa-solid fa-house"></i> Dashboard</h3></a>
+                        </svg>
+                    </summary>
+                </details>
+            </div>
+
+            <div class="accordion-item overflow-hidden">
+                <details class="group peer" data-accordion="a1">
+                    <summary class="according-main">
+                        <h3 class="according-title"><i class="fa-solid fa-user"></i> Profile</h3>
+                        <svg class="inline-block w-6 h-6 mt-[3px] ml-10 transition-transform shrink-0 group-open:rotate-90"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </summary>
+                </details>
+
+                <div
+                    class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-[300] peer-open:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="link-accor">
+                            <ul class="accordin-ul">
+                                <li class="accordin-li"><a href="#">Edit Profile</a></li>
+                                <li class="accordin-li"><a href="#">Bank Account Details</a></li>
+                                <li class="accordin-li"><a href="#">Reset Password</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item overflow-hidden">
+                <details class="group peer" data-accordion="a1">
+                    <summary class="according-main">
+                        <h3 class="according-title"><i class="fa-brands fa-slack"></i>Activate Account</h3>
+                        <svg class="inline-block w-6 h-6 mt-[3px] ml-10 transition-transform shrink-0 group-open:rotate-90"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </summary>
+                </details>
+
+                <div
+                    class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-[300] peer-open:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="link-accor">
+                            <ul class="accordin-ul">
+                                <li class="accordin-li"><a href="#">Activate Account</a></li>
+                                <li class="accordin-li"><a href="#">Activation History</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item overflow-hidden">
+                <details class="group peer" data-accordion="a1">
+                    <summary class="according-main">
+                        <h3 class="according-title"><i class="fa-solid fa-layer-group"></i> Request Fund</h3>
+                        <svg class="inline-block w-6 h-6 mt-[3px] ml-10 transition-transform shrink-0 group-open:rotate-90"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </summary>
+                </details>
+
+                <div
+                    class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-[300] peer-open:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="link-accor">
+                            <ul class="accordin-ul">
+                                <li class="accordin-li"><a href="#">Request Fund</a></li>
+                                <li class="accordin-li"><a href="#">Fund Request History</a></li>
+                                <li class="accordin-li"><a href="#">Income To E Wallet Transfer</a></li>
+                                <li class="accordin-li"><a href="#">Income Transfer</a></li>
+                                <li class="accordin-li"><a href="#">Wallet Transfer</a></li>
+                                <li class="accordin-li"><a href="#">Wallet Ladger</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item overflow-hidden">
+                <details class="group peer" data-accordion="a1">
+                    <summary class="according-main">
+                        <h3 class="according-title"><i class="fa-solid fa-folder"></i> Income Reports</h3>
+                        <svg class="inline-block w-6 h-6 mt-[3px] ml-10 transition-transform shrink-0 group-open:rotate-90"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </summary>
+                </details>
+
+                <div
+                    class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-[300] peer-open:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="link-accor">
+                            <ul class="accordin-ul">
+                            <li class="accordin-li"><a href="#">Direct Income</a></li>
+                            <li class="accordin-li"><a href="#">Roi Income</a></li>
+                            <li class="accordin-li"><a href="#">Level Income</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item overflow-hidden">
+                <details class="group peer" data-accordion="a1">
+                    <summary class="according-main">
+                        <h3 class="according-title"><i class="fa-solid fa-people-group"></i> My Team</h3>
+                        <svg class="inline-block w-6 h-6 mt-[3px] ml-10 transition-transform shrink-0 group-open:rotate-90"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </summary>
+                </details>
+
+                <div
+                    class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-[300] peer-open:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="link-accor">
+                            <ul class="accordin-ul">
+                                <li class="accordin-li"><a href="#">Team Tree</a></li>
+                                <li class="accordin-li"><a href="#">Level Report</a></li>
+                                <li class="accordin-li"><a href="#">My Directs</a></li>
+                                <li class="accordin-li"><a href="#">Total Team</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item overflow-hidden">
+                <details class="group peer" data-accordion="a1">
+                    <summary class="according-main">
+                        <h3 class="according-title"><i class="fa-solid fa-money-bill-transfer"></i> Withdraw</h3>
+                        <svg class="inline-block w-6 h-6 mt-[3px] ml-10 transition-transform shrink-0 group-open:rotate-90"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </summary>
+                </details>
+
+                <div
+                    class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-[300] peer-open:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="link-accor">
+                            <ul class="accordin-ul">
+                                <li class="accordin-li"><a href="#">Withdrawal</a></li>
+                                <li class="accordin-li"><a href="#">Withdrawal History</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item overflow-hidden">
+                <details class="group peer" data-accordion="a1">
+                    <summary class="according-main">
+                        <h3 class="according-title"><i class="fa-solid fa-circle-info"></i> Support</h3>
+                        <svg class="inline-block w-6 h-6 mt-[3px] ml-10 transition-transform shrink-0 group-open:rotate-90"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </summary>
+                </details>
+
+                <div
+                    class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-[300] peer-open:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="link-accor">
+                            <ul class="accordin-ul">
+                                <li class="accordin-li"><a href="#"> Create Ticket</a></li>
+                                <li class="accordin-li"><a href="#">Inbox</a></li>
+                                <li class="accordin-li"><a href="#">Outbox</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item overflow-hidden">
+                <details class="group peer " data-accordion="a1">
+                    <summary class="according-main">
+                     <a href="{{ route('logout') }}"><h3 class="according-title"><i class="fa-solid fa-right-from-bracket"></i> Logout</h3></a> 
+                        </svg>
+                    </summary>
+                </details>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <div class="header d-flex align-items-center justify-content-between ">
+            <button class="toggle-btn btn btn-light" onclick="toggleSidebar()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <div class="mobile-logo">
+                <img src="./Assets/img/logo.png" alt="">
+            </div>
+            <div class="right-icon">
+                
+
+                <div class="icon-main">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="icon-main">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="icon-main">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="dropdown">
+                    <button class="avtar-btn" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./Assets/img/avtar.png" class="avtar">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="avtar-main">
+                            <div class="avtar-img">
+                                <img src="./Assets/img/avtar.png" alt="">
+                            </div>
+                            <div class="avtar-text">
+                                <h6>Adminstator</h6>
+                                <small class="text-muted">admin</small>
+                            </div>
+                        </div>
+                        <li><a class="dropdown-item drops" href="#"><i class="fa-solid fa-user"></i> My Profile</a></li>
+                        <li><a class="dropdown-item drops" href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                        <li><a class="dropdown-item drops" href="#"><i class="fa-solid fa-file-lines"></i> Billing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="app-content mt-0">
+            <div class="conatiner">
+                <div class="row">
+                    <div class="col-12 mt-4">
+                        <div class="welcome-banner">
+                           <div class="circle"></div>
+                           <div class="welcome-main">
+                              <div class="welcome-title">
+                                 <h2><span>Welcome To administrator</span></h2>
+                                 <h2><span>Admin</span></h2>
+                                 <h2><span>Activation Date :2024-11-08 12:00</span></h2>
+         
+                                 <h2 class="mb-3">Activation Status : <span class="active-id">active</span></h2>
+                              </div>
+                              <div class="wrapper">
+                                <div class="ball"></div>
+                                <div class="ball1"></div>
+                                <div class="ball2"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                    <div class="col-md-4">
+                        <div class="card card-active box mt-4">
+                            <div class="card-body">
+                                <div class="card-main-content">
+                                    <div class="card-main-title">
+                                        <h4 class="activef4">Bitcoin</h4>
+                                        <h2 class="activef2">1.765 BTC</h2>
+                                    </div>
+                                    <div class="card-main-img">
+                                        <img src="./Assets/img/bitcoin.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card box mt-4">
+                            <div class="card-body">
+                                <div class="card-main-content">
+                                    <div class="card-main-title">
+                                        <h4>Ethereum</h4>
+                                        <h2>1.765 ETH</h2>
+                                    </div>
+                                    <div class="card-main-img">
+                                        <img src="./Assets/img/coins.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card box mt-4">
+                            <div class="card-body">
+                                <div class="card-main-content">
+                                    <div class="card-main-title">
+                                        <h4>Litecoin</h4>
+                                        <h2>1.765 LTC</h2>
+                                    </div>
+                                    <div class="card-main-img">
+                                        <img src="./Assets/img/litecoin.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Time</th>
+                                                <th>Transactions</th>
+                                                <th>Sent</th>
+                                                <th>Fees</th>
+                                                <th>Block Size</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>8526369</td>
+                                                <td>60 seconds ago</td>
+                                                <td>2,122</td>
+                                                <td>22,819.638 BTC</td>
+                                                <td>1.496 BTC</td>
+                                                <td>975,573</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8526369</td>
+                                                <td>60 seconds ago</td>
+                                                <td>2,122</td>
+                                                <td>22,819.638 BTC</td>
+                                                <td>1.496 BTC</td>
+                                                <td>975,573</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8526369</td>
+                                                <td>60 seconds ago</td>
+                                                <td>2,122</td>
+                                                <td>22,819.638 BTC</td>
+                                                <td>1.496 BTC</td>
+                                                <td>975,573</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8526369</td>
+                                                <td>60 seconds ago</td>
+                                                <td>2,122</td>
+                                                <td>22,819.638 BTC</td>
+                                                <td>1.496 BTC</td>
+                                                <td>975,573</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8526369</td>
+                                                <td>60 seconds ago</td>
+                                                <td>2,122</td>
+                                                <td>22,819.638 BTC</td>
+                                                <td>1.496 BTC</td>
+                                                <td>975,573</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="footer">Copyright © 2024 BlockHub. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- model -->
+
+    <!-- Bootstrap JS -->
+    <script src="./Assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Assets/js/jquery-3.5.1.min.js"></script>
+    <script src="./Assets/js/jquery-ui.js"></script>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('main-content');
+
+            sidebar.classList.toggle('active');
+            mainContent.classList.toggle('expanded');
+        }
+        
+    </script>
+
+<script>
+    $(document).ready(function() {
+        $('#myModal').modal('show');
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script>
+    function copyToClipboard() {
+        const input = document.getElementById('linkTxt');
+        input.select();
+        input.setSelectionRange(0, 99999);
+        document.execCommand('copy');
+        toastr.success('<span class="text-success bg-black">Copied!</span>')
+    }
+</script>
+</body>
+
+</html>
